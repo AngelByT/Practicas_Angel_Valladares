@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Horario</title>
+    <style>
+        table {
+            align-items: center;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <h1>Horario de clases todo pro</h1>
 
     <table>
+        <Caption>Mi horario de clases 🤓👆</Caption>
         <tr>
-            <th>Mi horario de clases</th>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
         </tr>
         <tr>
-            <td>Hora</td>
-            <td>Lunes</td>
-            <td>Martes</td>
-            <td>Miercoles</td>
-            <td>Jueves</td>
-            <td>Viernes</td>
+            <td>7:00a.m. - 7:45a.m</td>
+            <td>Viaje a Superate</td>
+            <td>Viaje a Superate</td>
+            <td>Viaje a Superate</td>
+            <td rowspan="4">Viaje al Instituto</td>
+            <td rowspan="3">Viaje al Instituto</td>
         </tr>
         <tr>
-            <td>4:00am - 5:30am</td>
-            <td>Despertar/alistar mis cosas de la escuela 🤓👆</td>
+            <td>7:45a.m. - 8:30a.m.</td>
+            <td colspan="3" rowspan="7">Clases Supérate</td>
+        </tr>
+        <tr>
+            <td>8:30a.m. - 8:45a.m.</td>
+        </tr>
+        <tr>
+            <td>8:45a.m. - 9:30a.m.</td>
+            <td rowspan="2">Informatica</td>
+        </tr>
+        <tr>
+            <td>9:30a.m. - 10:15a.m.</td>
+            <td>Lenguaje & Literatura</td>
+        </tr>
+        <tr>
+            <td>10:15a.m. - 10:25a.m.</td>
+            <td colspan="2">Receso</td>
+        </tr>
+        <tr>
+            <td>10:25a.m. - 11:15a.m.</td>
+            <td rowspan="2" colspan="2">Lenguaje & Literatura</td>
+        </tr>
+        <tr>
+            <td>11:15a.m. - 12:00p.m.</td>
+        </tr>
+        <tr>
+            <td>12:00p.m. - 1:00p.m.</td>
+            <td colspan="5">Almuerzo</td>
         </tr>
     </table>
 </body>
