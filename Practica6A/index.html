@@ -13,7 +13,7 @@
         <fieldset>
             <legend>Información personal:</legend>
             <label for="name">Nombre del reservante:</label><br>
-            <input type="text" name="name" id="name"><br><br>
+            <input type="text" name="name" id="name" size="45"><br><br>
             <label for="edad">Edad:</label><br>
             <input type="number" name="edad" id="edad"><br><br>
             <label for="e-mail">Correo electrónico:</label><br>
@@ -24,8 +24,23 @@
         <fieldset>
             <legend>Información de viaje:</legend>
             <label for="acompañantes">Numero de acompañantes</label><br>
-            <input type="number" name="acompañantes" id="acompañantes"><br><br>
+            <input type="number" name="acompañantes" id="acompañantes" min="1" max="5" value="1"><br><br>
+            <label for="origen">Lugar de origen:</label><br>
+            <input type="text" name="origen" id="origen" value="San Salvador" readonly><br><br>
+            <label for="destino">Lugar de destino:</label><br>
+            <select name="destino" id="destino">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Venecia">Venecia</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Lauterbrunnen">Lauterbrunnen</option>
+                <option value="Pi-on-Yang">Pi-on-Yang</option>
+            </select><br><br>
+            <label for="salida">Fecha de salida:</label><br>
+            <input type="date" name="salida" id="salida"><br><br>
+            <label for="entrada">Fecha de entrada:</label><br>
+            <input type="date" name="entrada" id="entrada"><br><br>
         </fieldset>
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
