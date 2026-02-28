@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de viajes</title>
+</head>
+<body>
+    <h1>Southwest Airlines</h1>
+    <h2>Reservas:</h2>
+
+    <form action="">
+        <fieldset>
+            <legend>Información personal:</legend>
+            <label for="name">Nombre del reservante:</label><br>
+            <input type="text" name="name" id="name" size="45"><br><br>
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad"><br><br>
+            <label for="e-mail">Correo electrónico:</label><br>
+            <input type="email" name="e-mail" id="e-mail" placeholder="example@email.com"><br><br>
+            <label for="tel">Número telefonico</label><br>
+            <input type="tel" name="tel" id="tel">
+        </fieldset>
+        <fieldset>
+            <legend>Información de viaje:</legend>
+            <label for="acompañantes">Numero de acompañantes</label><br>
+            <input type="number" name="acompañantes" id="acompañantes" min="0" max="5" value="0"><br><br>
+            <label for="origen">Lugar de origen:</label><br>
+            <input type="text" name="origen" id="origen" value="San Salvador" readonly><br><br>
+            <label for="destino">Lugar de destino:</label><br>
+            <select name="destino" id="destino">
+                <option value="Barcelona">Barcelona</option>
+                <option value="Venecia">Venecia</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Lauterbrunnen">Lauterbrunnen</option>
+                <option value="Pi-on-Yang">Pi-on-Yang</option>
+            </select><br><br>
+            <label for="salida">Fecha de salida:</label><br>
+            <input type="date" name="salida" id="salida"><br><br>
+            <label for="entrada">Fecha de entrada:</label><br>
+            <input type="date" name="entrada" id="entrada"><br><br>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
