@@ -1,0 +1,25 @@
+table {
+     align-items: center;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+legend {
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-family: "Fascinate";
+    color: chocolate;
+    font-size: 5rem;
+}
+
+h2{
+    font-family: "Nabla";
+    font-size: 3rem;
+}
