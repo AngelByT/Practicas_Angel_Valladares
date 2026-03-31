@@ -7,30 +7,26 @@
 
     <link rel="stylesheet" href="css/estilos.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Animal Crossing Wiki</h1>
-        <h1>Tom Nook</h1>
-        <nav>
-            <ul>
-                <li><a href="">Historia</a></li>
-                <li><a href="">Información técnica</a></li>
-                <li><a href="">Ficha técnica</a></li>
-                <li><a href="">Registro de fans</a></li>
-                <li><a href="">Galería</a></li>
+    <header id="head">
+        <h1 class="title">Animal Crossing Wiki</h1>
+        <h1 class="title", id="name">Tom Nook</h1>
+        <nav id="links">
+            <ul id="menu">
+                <li><a href="#historia" class="link">Historia</a></li>
+                <li><a href="#info_tec" class="link">Información técnica</a></li>
+                <li><a href="#ficha_tec" class="link">Ficha técnica</a></li>
+                <li><a href="#registro_fans" class="link">Registro de fans</a></li>
+                <li><a href="#galeria" class="link">Galería</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Historia:</h2>
-            <img src="Img/Tom nook 1.png" alt="Saul Goodman">
+        <section class="web_sections" id="historia">
+            <h2 class="section_title" id="historia_subt">Historia:</h2>
+            <img src="Img/tom nook front page.jpg" alt="Tom Goat" id="front_img">
             <h3>Historia y Roles:</h3>
             <P>Tom Nook es un mapache ficticio perteneciente a la saga de videojuegos "Animal Crossing",
                 el cual se encarga de varias funciones a lo largo de todos los juegos. Desde
@@ -48,8 +44,8 @@
             </p>
         </section>
 
-        <section>
-            <h2>Información</h2>
+        <section class="web_sections" id="info_tec">
+            <h2 class="section_title" >Información Tecnica</h2>
 
             <h3>Datos curiosos de Tom Nook:</h3>
             <ul>
@@ -80,8 +76,8 @@
             </ol>
         </section>
 
-        <section>
-            <h2>Ficha Tecnica</h2>
+        <section class="web_sections fichas">
+            <h2 class="section_title" id="ficha_tec">Ficha Tecnica</h2>
 
             <table style="width: 100%;">
                 <legend >Datos de Tom Nook</legend>
@@ -116,9 +112,9 @@
             </table>
         </section>
 
-        <section>
-            <h2>Formulario de fans:</h2>
-            <h3>Enviale un saludo a Tom Nook:</h3>
+        <section class="web_sections">
+            <h2 class="section_title" id="registro_fans">Formulario de fans:</h2>
+            <h3 id="saludo">Enviale un saludo a Tom Nook:</h3>
             <form action="">
                 <Label for="nombre">Nombre Completo</Label><br>
                 <input type="text" name="nombre" id="nombre"><br><br>
@@ -134,14 +130,24 @@
             
         </section>
 
-        <section>
-            <h2>Galería</h2>
-            <img src="Img/descarga (1).jpeg" alt="Tom Nook XD" width="400px" height="400px">
-            <img src="Img/descarga (2).jpeg" alt="Tom Nook XD" width="400px" height="400px">
-            <img src="Img/Tom Nook 2.jpg" alt="Tom Nook XD" width="400px" height="400px">
-            <img src="Img/Tom Nook 3.png" alt="Tom Nook XD" width="400px" height="400px">
-            <img src="Img/blkhyo-tom-nook.gif" alt="Tom Nook XD" width="400px" height="400px">
+        <section class="web_sections" id="galeria">
+            <h2 class="section_title" id="galeria">Galería</h2>
+            <div class="container" id="img_container">
+                <img src="Img/descarga (1).jpeg" alt="Tom Nook XD" width="400px" height="400px">
+                <img src="Img/descarga (2).jpeg" alt="Tom Nook XD" width="400px" height="400px">
+                <img src="Img/Tom Nook 2.jpg" alt="Tom Nook XD" width="400px" height="400px">
+                <img src="Img/Tom Nook 3.png" alt="Tom Nook XD" width="400px" height="400px">
+                <img src="Img/blkhyo-tom-nook.gif" alt="Tom Nook XD" width="400px" height="400px">
+            </div>
+            
         </section>
     </main>
+
+     <footer class="footer">
+        <p>
+            Proyecto hecho por los loles pal Supérate Fundación Frech.<br />
+            © Todos los derechos reservados a mi mamita.
+        </p>
+    </footer>
 </body>
 </html>
