@@ -1,0 +1,37 @@
+.contenedor{
+    display: grid;
+    grid-template-areas: 'header' 'menu' 'main';
+    gap: 10px;
+}
+.header{
+    background-color: purple;
+    text-align: center;
+    color: white;
+    grid-area: header;
+}
+
+.menu li{
+    background-color: skyblue;
+    margin-bottom: 7px;
+    padding: 8px;
+}
+.menu{
+    grid-area: menu;
+;
+}
+
+.contenido{
+    grid-area: main;
+}
+
+@media (min-width: 600px){
+    .header {grid-area: 1/ span 6;}
+    .menu {grid-area: 2/ span 1;}
+    .contenido {grid-area: 2 / span 6;}
+}
+
+@media (min-width: 768px){
+    .header {grid-area: 1/ span 6;}
+    .menu {grid-area: 2/ span 3;}
+    .contenido {grid-area: 2 / span 3;}
+}
